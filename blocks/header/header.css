@@ -13,7 +13,7 @@ header nav {
   display: grid;
   grid-template:
     'brand hamburger' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+    'sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 24px;
   margin: auto;
@@ -138,16 +138,19 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   }
 }
 
+/* stylelint-disable no-descending-specificity */
+
 /* mini */
-header .nav-mini {
+header nav .nav-mini {
   grid-area: mini;
   flex-basis: 100%;
- > .default-content-wrapper {
+ 
+  > .default-content-wrapper {
   > ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 20px;
     font-size: var(--body-font-size-s);
 
     >li {

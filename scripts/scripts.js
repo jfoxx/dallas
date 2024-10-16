@@ -13,8 +13,6 @@ import {
   sampleRUM,
 } from './aem.js';
 
-
-
 /**
  * overlays icon to make it an image mask instead of an img.
  * @param {Element, String, String} span The icon span element
