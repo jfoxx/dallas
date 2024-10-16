@@ -45,7 +45,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 114px;
 }
 
 /* fallback fonts */
@@ -76,6 +76,14 @@
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
   }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 body {
